@@ -18,7 +18,7 @@ Write a Java program that prompts the user to enter a string and counts the numb
 Example:
 
 ```
-Enter a string: This is a Test.
+Enter a string: This is a Test[Main.java](src%2Fmain%2Fjava%2Fcom%2Fxpanxion%2Fassignments%2FMain.java).
 Number of uppercase letters: 2.
 
 Process finished with exit code 0

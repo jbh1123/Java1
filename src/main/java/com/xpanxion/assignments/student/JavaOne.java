@@ -1,6 +1,7 @@
 package com.xpanxion.assignments.student;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class JavaOne {
 
@@ -37,7 +38,26 @@ public class JavaOne {
     }
 
     public void ex3() {
-        System.out.println("Student 1: ex3.");
+        Scanner console = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String someString = console.nextLine();
+        StringTokenizer st = new StringTokenizer(someString);
+        String result = "";
+        boolean changeToUppercase = true;
+
+        while (st.hasMoreTokens()) {
+            if ( changeToUppercase ) {
+                result += st.nextToken().toUpperCase() + " ";
+                changeToUppercase = false;
+            }
+            else {
+                result += st.nextToken() + " ";
+                changeToUppercase = true;
+            }
+        }
+
+        System.out.println(result);
+        console.close();
     }
 
     public void ex4() {

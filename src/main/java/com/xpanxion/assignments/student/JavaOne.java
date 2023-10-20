@@ -16,14 +16,24 @@ public class JavaOne {
 
     public void ex1() {
         Scanner console = new Scanner(System.in);
-        System.out.print("Please enter your name: ");
+        System.out.print("Enter your name: ");
         String name = console.nextLine();
         System.out.println("Your name in upper case is: " + name.toUpperCase());
         console.close();
     }
 
     public void ex2() {
-        System.out.println("Student 1: ex2.");
+        Scanner console = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String someString = console.nextLine();
+        int countUpperCase = 0;
+
+        for ( char c : someString.toCharArray() ) {
+            if ( Character.isUpperCase(c) ) countUpperCase++;
+        }
+
+        System.out.println("Number of uppercase letters: " + countUpperCase);
+        console.close();
     }
 
     public void ex3() {

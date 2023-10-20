@@ -61,7 +61,22 @@ public class JavaOne {
     }
 
     public void ex4() {
-        System.out.println("Student 1: ex4.");
+        Scanner console = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String someString = console.nextLine();
+        char[] someStringCharArr = someString.toCharArray();
+        int ptrL = 0, ptrR = someStringCharArr.length-1;
+        while ( ptrL < ptrR ) {
+            if (someStringCharArr[ptrL] != someStringCharArr[ptrR]) {
+                System.out.println("NOT A PALINDROME");
+                return;
+            }
+            ptrL++;
+            ptrR--;
+        }
+
+        System.out.println("IS A PALINDROME");
+        console.close();
     }
 
     public void ex5() {

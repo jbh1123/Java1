@@ -109,7 +109,31 @@ public class JavaOne {
     }
 
     public void ex7() {
-        System.out.println("Student 1: ex7.");
+        System.out.print("Enter first number: ");
+        int num1 = console.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = console.nextInt();
+        System.out.print("Enter operation (add, sub, mul, div): ");
+
+        String op = console.next();
+        int result = 0;
+        switch (op.toLowerCase()) {
+            case "add":
+                result = num1 + num2;
+                break;
+            case "sub":
+                result = num1 - num2;
+                break;
+            case "mul":
+                result = num1 * num2;
+                break;
+            case "div":
+                result = num1 / num2;
+                break;
+            default:
+                System.out.println("Invalid operation!");
+        }
+        System.out.println("Result: " + result);
     }
 
     public void ex8() {

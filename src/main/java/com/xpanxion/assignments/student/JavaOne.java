@@ -1,5 +1,6 @@
 package com.xpanxion.assignments.student;
 
+import javax.swing.plaf.InsetsUIResource;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -100,7 +101,11 @@ public class JavaOne {
     }
 
     public void ex6() {
-        System.out.println("Student 1: ex6.");
+        System.out.print("Enter first number: ");
+        int num1 = console.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = console.nextInt();
+        System.out.println("Result: " + (num1+num2));
     }
 
     public void ex7() {

@@ -1,6 +1,7 @@
 package com.xpanxion.assignments.student;
 
 import javax.swing.plaf.InsetsUIResource;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -137,7 +138,24 @@ public class JavaOne {
     }
 
     public void ex8() {
-        System.out.println("Student 1: ex8.");
+        System.out.print("Enter price per square feet: ");
+        double pricePerSqFt = console.nextDouble();
+        console.nextLine();
+        int totalArea = 0;
+
+        while ( true ) {
+            System.out.print("Enter room dimensions (width x height): ");
+            String userInput = console.nextLine();
+            if ( userInput.compareToIgnoreCase("done") == 0 ) break;
+            String[] parts = userInput.split(" x ");
+            int width = Integer.parseInt(parts[0]);
+            int height = Integer.parseInt(parts[1]);
+            totalArea += width * height;
+        }
+
+        DecimalFormat df2 = new DecimalFormat("#.00");
+        System.out.println("Total cost: $" + df2.format(totalArea*pricePerSqFt));
+
     }
 
     public void ex9() {

@@ -176,7 +176,14 @@ public class JavaOne {
     }
 
     public void ex10() {
-        System.out.println("Student 1: ex10.");
+        System.out.print("Enter a string: ");
+        String[] parts = console.nextLine().split(" ");
+        for ( String word : parts ) {
+            char[] wordAsChars = word.toCharArray();
+            for ( int i=0; i < wordAsChars.length; i++ ) {
+                System.out.println(" ".repeat(i) + wordAsChars[i]);
+            }
+        }
     }
 
     //

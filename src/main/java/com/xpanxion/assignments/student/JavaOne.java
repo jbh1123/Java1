@@ -4,6 +4,8 @@ import javax.swing.plaf.InsetsUIResource;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.StringTokenizer;
+import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class JavaOne {
 
@@ -159,7 +161,18 @@ public class JavaOne {
     }
 
     public void ex9() {
-        System.out.println("Student 1: ex9.");
+        System.out.println("Generating a random number between 1 and 5 for you to guess...");
+        Random rand = new Random();
+        int randInt = 1 + rand.nextInt(5);
+        int num;
+        do {
+            System.out.print("Enter a number: ");
+            num = console.nextInt();
+            if ( num != randInt) {
+                System.out.println("Try again...");
+            }
+        } while ( num != randInt );
+        System.out.println("You guessed it!!!");
     }
 
     public void ex10() {

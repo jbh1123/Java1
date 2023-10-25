@@ -3,28 +3,28 @@ package com.xpanxion.assignments.student;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 
-public class ExampleThree
+public class ExampleThreeAndFour
 {
-    class Product
+    class Product extends Base
     {
         private int id;
         private String name;
         private double cost;
 
         public Product(int id, String name, double cost) {
-            this.id = id;
+            super(id);
             this.name = name;
             this.cost = cost;
         }
     }
 
-    class Invoice
+    class Invoice extends Base
     {
         private int id;
         private ArrayList<Product> products;
 
         public Invoice(int id) {
-            this.id = id;
+            super(id);
             this.products = new ArrayList<>();
         }
 

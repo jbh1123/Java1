@@ -2,9 +2,9 @@ package com.xpanxion.assignments.student;
 
 public class Person
 {
-    private final String firstName;
-    private final String lastName;
-    private final int id;
+    private String firstName;
+    private String lastName;
+    private int id;
 
     public Person(int id, String firstAndLastName) {
         this.id = id;
@@ -19,8 +19,20 @@ public class Person
         this.lastName = lastName;
     }
 
+    public void changeLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     public String getName() {
         return firstName + " " + lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public int getID() {

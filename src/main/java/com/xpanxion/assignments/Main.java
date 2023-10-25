@@ -23,9 +23,9 @@ public class Main {
 //        test.main();
 //        ExampleFive test5 = new ExampleFive();
 //        test5.main();
-//        javaTwo.ex7();
 //        Calculator newCalc = new Calculator();
 //        newCalc.startCalculator();
+        javaTwo.ex7();
 //        javaTwo.ex8();
 //        javaTwo.ex9();
 //        javaTwo.ex10();

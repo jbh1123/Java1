@@ -2,6 +2,8 @@ package com.xpanxion.assignments;
 
 import com.xpanxion.assignments.student.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         JavaOne javaOne = new JavaOne();
@@ -26,8 +28,17 @@ public class Main {
 //        Calculator newCalc = new Calculator();
 //        newCalc.startCalculator();
 //        javaTwo.ex7();
-        javaTwo.ex8();
+//        javaTwo.ex8();
 //        javaTwo.ex9();
-//        javaTwo.ex10();
+        QueueOfCats catQ = new QueueOfCats();
+        catQ.enqueueCat(new Cat("Alice"));
+        catQ.enqueueCat(new Cat("Bob"));
+        catQ.enqueueCat(new Cat("Charlie"));
+        catQ.enqueueCat(new Cat("Dan"));
+        while ( !catQ.isEmpty() ) {
+            System.out.println(catQ);
+            catQ.dequeueCat();
+            TimeUnit.SECONDS.sleep(3);
+        }
     }
 }

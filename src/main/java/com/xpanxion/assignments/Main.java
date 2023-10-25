@@ -1,8 +1,6 @@
 package com.xpanxion.assignments;
 
-import com.xpanxion.assignments.student.ExampleThreeAndFour;
-import com.xpanxion.assignments.student.JavaOne;
-import com.xpanxion.assignments.student.JavaTwo;
+import com.xpanxion.assignments.student.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -21,11 +19,13 @@ public class Main {
         JavaTwo javaTwo = new JavaTwo();
 //        javaTwo.ex1();
 //        javaTwo.ex2();
-        ExampleThreeAndFour test = new ExampleThreeAndFour();
-        test.main();
-//        javaTwo.ex5();
-//        javaTwo.ex6();
+//        ExampleThreeAndFour test = new ExampleThreeAndFour();
+//        test.main();
+//        ExampleFive test5 = new ExampleFive();
+//        test5.main();
 //        javaTwo.ex7();
+//        Calculator newCalc = new Calculator();
+//        newCalc.startCalculator();
 //        javaTwo.ex8();
 //        javaTwo.ex9();
 //        javaTwo.ex10();

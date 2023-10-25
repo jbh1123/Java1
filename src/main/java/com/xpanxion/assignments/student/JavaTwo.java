@@ -42,8 +42,4 @@ public class JavaTwo
             System.out.println(personHashMap.get(id));
         } while (true);
     }
-
-    public void ex3() {
-
-    }
 }

@@ -1,5 +1,6 @@
 package com.xpanxion.assignments;
 
+import com.xpanxion.assignments.student.ExampleThree;
 import com.xpanxion.assignments.student.JavaOne;
 import com.xpanxion.assignments.student.JavaTwo;
 
@@ -20,7 +21,8 @@ public class Main {
         JavaTwo javaTwo = new JavaTwo();
 //        javaTwo.ex1();
 //        javaTwo.ex2();
-        javaTwo.ex3();
+        ExampleThree test = new ExampleThree();
+        test.main();
 //        javaTwo.ex4();
 //        javaTwo.ex5();
 //        javaTwo.ex6();

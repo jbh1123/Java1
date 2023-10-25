@@ -26,8 +26,8 @@ public class Main {
 //        Calculator newCalc = new Calculator();
 //        newCalc.startCalculator();
 //        javaTwo.ex7();
-//        javaTwo.ex8();
-        javaTwo.ex9();
+        javaTwo.ex8();
+//        javaTwo.ex9();
 //        javaTwo.ex10();
     }
 }

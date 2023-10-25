@@ -2,21 +2,7 @@ package com.xpanxion.assignments.student;
 
 import java.util.HashMap;
 
-public class ExampleFive
-{
-    public void main() {
-        var repository = new Repository();
-        var p = repository.getPerson();
-        System.out.println(p);
-    }
-}
-
-interface DataAccess
-{
-    public Person getPerson();
-}
-
-class Repository implements DataAccess
+public class Repository implements DataAccess
 {
     private HashMap<Integer, Person> people;
 
